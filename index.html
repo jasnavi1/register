@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Information Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Personal Information Form</h2>
+<form id="personalForm" onsubmit="return validateForm()">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<label for="gender">Gender:</label>
+<input type="radio" id="male" name="gender" value="male"> Male
+<input type="radio" id="female" name="gender" value="female"> Female
+<label for="interests">Interests:</label>
+<input type="checkbox" name="interests" value="Reading"> Reading
+<input type="checkbox" name="interests" value="Traveling"> Traveling
+<input type="checkbox" name="interests" value="Sports"> Sports
+<label for="bio">Short Bio:</label>
+<textarea id="bio" name="bio" rows="3"></textarea>
+<input type="submit" value="Submit">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
